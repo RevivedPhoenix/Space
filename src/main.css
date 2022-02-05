@@ -1,0 +1,116 @@
+body, html{
+    height: 100%;
+    margin-top: 0;
+}
+html{
+    background-color: black;
+}
+.space{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(space.png);
+    height: 100%;
+    width: 70%;
+    background-position: center center;
+}
+.planet-area{
+    position: relative;
+    height: 100%;
+}
+.planet{
+    position: absolute;
+    z-index: 1;
+    height: 70%;
+    width: 60%;
+    bottom: 0;
+    left: 0;
+}
+.rocket{
+    position: absolute;
+    height: 30%;
+    width: 20%;
+    transform: rotate(20deg);
+    padding-left: 350px;
+    padding-top: 220px;
+}
+.control-panel{
+    position: absolute;
+    height: 39%;
+    width: 26%;
+    top: 40%;
+    right: 15%;
+    background: repeating-linear-gradient(45deg, #aa3020, #ec9131 10px, #000000 10px, #000000 20px);
+}
+.control-panel__inner{
+    position: absolute;
+    height: 265px;
+    width: 345px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #30365e;
+}
+#key{
+    margin-top: 10px;
+    margin-left: 35px;
+    display: flow;
+    float: left;
+    border: 1px solid #ec9131;
+    border-radius: 20px;
+    background: #5e5e9a;
+    color: azure;
+    font-family: 'Dosis', sans-serif;
+}
+#subbut{
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #ec9131;
+    border-radius: 20%;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+}
+#check{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    width: 239px;
+    left: 60px;
+}
+.check-buttons{
+    display: flex;
+    margin-top: 10px;
+    width: 239px;
+}
+.levers{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+input[type='range'] {
+    height:120px;
+    padding: 0 20px;
+}
+
+input[type='checkbox'] {
+    margin: 0 20px;
+}
+#laun{
+    margin-top: 10px;
+    text-align: center;
+
+}
+#button1{
+    height: 20px;
+    font-size: 20px;
+    color: azure;
+    background-color: crimson;
+    border-radius: 50%;
+    border: 1px solid azure;
+    font-family: 'Dosis', sans-serif;
+}

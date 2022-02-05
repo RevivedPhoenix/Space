@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link  rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <script defer src="animation.js"></script>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img class="planet" src="mars.png">
+            <img class="rocket" src="rocket.png">
+        </div>
+        <div class="control-panel">
+            <div class="control-panel__inner">
+                <input type="password" id = "key" placeholder="Inter password to unlock" name="password" style="width: 200px">
+                <input type="button" id="subbut" value="OK">
+                <div class="check-buttons">
+                    <form action="[value]" method="[value]" id="check">
+                        <input type="checkbox" id="chbox1" class="checkbox1" name="technique" value="false" autocomplete="off" onchange="checkboxFunc(this.value)">
+                        <input type="checkbox" id="chbox2" class="checkbox1" name="technique" value="false" autocomplete="off" onchange="checkboxFunc2(this.value)">
+                        <input type="checkbox" id="chbox3" class="checkbox1" name="technique" value="false" autocomplete="off" onchange="checkboxFunc3(this.value)">
+                        <input type="checkbox" id="chbox4" class="checkbox1" name="technique" value="false" autocomplete="off" onchange="checkboxFunc4(this.value)">
+                        <input type="checkbox" id="chbox5" class="checkbox1" name="technique" value="false" autocomplete="off" onchange="checkboxFunc5(this.value)">
+                        <input type="checkbox" id="chbox6" class="checkbox1" name="technique" value="false" autocomplete="off" onchange="checkboxFunc6(this.value)">
+                    </form>
+                </div>
+                <div class="levers">
+                    <input type="range" class="range1" orient="vertical" max="100" value="0" id="range1" onchange="rangeFunction(this.value)">
+                    <input type="range" class="range1" orient="vertical" max="100" value="0" id="range2" onchange="rangeFunction2(this.value)">
+                    <input type="range" class="range1" orient="vertical" max="100" value="0" id="range3" onchange="rangeFunction3(this.value)">
+                    <input type="range" class="range1" orient="vertical" max="100" value="0" id="range4" onchange="rangeFunction4(this.value)">
+                    <input type="range" class="range1" orient="vertical" max="100" value="0" id="range5" onchange="rangeFunction5(this.value)">
+                </div>
+                <input type="button" id="button1" value="launch" style="width: 100px; height: 50px">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
